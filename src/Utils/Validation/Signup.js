@@ -9,9 +9,9 @@ const SignupSchema = Joi.object({
     })
     .error((errors) => {
       errors.forEach((err) => {
-        if (err.code == "string.empty") {
+        if (err.code === "string.empty") {
           err.message = "Email is required field";
-        } else if (err.code == "string.email") {
+        } else if (err.code === "string.email") {
           err.message = "Please Enter a valid email";
         }
       });
@@ -22,9 +22,9 @@ const SignupSchema = Joi.object({
     .pattern(new RegExp("^[a-zA-Z0-9@#]{3,30}$"))
     .error((errors) => {
       errors.forEach((err) => {
-        if (err.code == "string.empty") {
+        if (err.code === "string.empty") {
           err.message = "password is required field";
-        } else if (err.code == "string.pattern.field") {
+        } else if (err.code === "string.pattern.field") {
           err.message = "password must be character,number or@#";
         }
       });
@@ -37,9 +37,9 @@ const SignupSchema = Joi.object({
       console.log("error", errors);
 
       errors.forEach((err) => {
-        if (err.code == "any.required") {
+        if (err.code === "any.required") {
           err.message = "password is required field";
-        } else if (err.code == "any.only") {
+        } else if (err.code === "any.only") {
           err.message = "password and Repeat Password does not match";
         }
       });
