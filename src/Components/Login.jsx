@@ -15,7 +15,7 @@ import { useForm } from "react-hook-form";
 import { Link as React_dom_Link } from "react-router-dom";
 import { LoginResolver } from "../Utils/Validation/LoginResolver";
 import { auth } from "../Utils/Firebase/index";
-import { AuthContext } from "./Authentucation/AuthProvider";
+import { AuthContext } from "./Authentication/AuthProvider";
 export default function Login() {
   const {
     handleSubmit,

@@ -9,7 +9,7 @@ import {
   Text,
   Link,
 } from "@chakra-ui/react";
-import { AuthContext } from "../Components/Authentucation/AuthProvider";
+import { AuthContext } from "./Authentication/AuthProvider";
 export default function Dashboard() {
   const { logout } = useContext(AuthContext);
 

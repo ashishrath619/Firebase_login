@@ -4,7 +4,7 @@ import "./index.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { AuthProvider } from "./Components/Authentucation/AuthProvider";
+import { AuthProvider } from "./Components/Authentication/AuthProvider";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
